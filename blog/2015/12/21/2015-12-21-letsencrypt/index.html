@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Un peu de sécurité</title>
+
+  <meta name="author" content="" />
+
+  
+  <meta name="keywords" content="">
+  
+
+  
+
+  <meta name="generator" content="Hugo 0.31" />
+
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="http://www.breizhcamp.org/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="http://www.breizhcamp.org/css/style.orange.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+  
+
+  
+  <link href="http://www.breizhcamp.org/css/custom.css" rel="stylesheet">
+
+  
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="http://www.breizhcamp.org/img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="http://www.breizhcamp.org/img/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="http://www.breizhcamp.org/img/apple-touch-icon.png" />
+
+  
+  <link href="http://www.breizhcamp.org/css/owl.carousel.css" rel="stylesheet">
+  <link href="http://www.breizhcamp.org/css/owl.theme.css" rel="stylesheet">
+
+  <link rel="alternate" href="http://www.breizhcamp.org/index.xml" type="application/rss+xml" title="BreizhCamp - 9ème édition - 20, 21 et 22 Mars 2019">
+
+  
+  <meta property="og:url" content="http://www.breizhcamp.org/" />
+  <meta property="og:title" content="Un peu de sécurité" />
+  <meta property="og:description" content="Le BreizhCamp, c&#39;est 3 jours de conférence à Rennes.
+    Créé en 2011 à l’initiative du BreizhJUG, nous sommes en cours de planification de la 9ème edition.
+    Le BreizhCamp propose de se faire rencontrer une communauté de développeurs et d’experts, avec un contenu à la carte sur plus de 100 thèmes présentés.
+    Chaque participant est libre de suivre les sujets qui ont retenu son attention ou de préférer les ateliers pour mettre en pratique les connaissances acquises.
+    " />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://www.breizhcamp.org/img/carousel/code-busters.png" />
+  <meta property="og:locale" content="fr_FR" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@breizhcamp" />
+  <meta name="twitter:creator" content="@breizhcamp" />
+  <meta name="twitter:title" content="Un peu de sécurité" />
+  <meta name="twitter:description" content="Le BreizhCamp, c&#39;est 3 jours de conférence à Rennes.
+    Créé en 2011 à l’initiative du BreizhJUG, nous sommes en cours de planification de la 9ème edition.
+    Le BreizhCamp propose de se faire rencontrer une communauté de développeurs et d’experts, avec un contenu à la carte sur plus de 100 thèmes présentés.
+    Chaque participant est libre de suivre les sujets qui ont retenu son attention ou de préférer les ateliers pour mettre en pratique les connaissances acquises.
+    " />
+  <meta name="twitter:image" content="http://www.breizhcamp.org/img/carousel/code-busters.png" />
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="http://www.breizhcamp.org/">
+                    <img src="http://www.breizhcamp.org/img/logo.png" alt="Un peu de sécurité logo" class="hidden-xs hidden-sm">
+                    <img src="http://www.breizhcamp.org/img/logo-small.png" alt="Un peu de sécurité logo" class="visible-xs visible-sm">
+                    <span class="sr-only">Un peu de sécurité - aller à l&#39;accueil</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">Basculer la Navigation</span>
+                        <i class="fa fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li class="dropdown">
+                        <a href="/blog/">Blog</a>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="/asso/">Asso</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+
+                </span>
+                    </div>
+                </form>
+
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Un peu de sécurité</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-9" id="blog-post">
+
+                        <p class="text-muted text-uppercase mb-small text-right">Par <a href="#">Sylvain</a> | 21 December 2015</p>
+
+                        <div id="post-content">
+                          
+
+<p>Depuis le 3 décembre, <a href="https://letsencrypt.org/">Let&rsquo;s Encrypt</a> est passée dans sa phase d&rsquo;Open Beta.
+Nous avons donc décidé d&rsquo;en profiter pour exposer le <a href="https://cfp.breizhcamp.org">CFP</a> en HTTPS.</p>
+
+<h2 id="préambule">Préambule</h2>
+
+<p>Avant d&rsquo;expliquer les étapes techniques de mise en œuvre, arrêtons nous un instant sur Let&rsquo;s Encrypt : il s&rsquo;agit d&rsquo;une autorité de certification libre qui apporte la possibilité d&rsquo;obtenir des certificats X.509 pour le chiffrement TLS.
+La nouveauté réside principalement dans la combinaison de 3 éléments :</p>
+
+<ul>
+<li><p>Le service est gratuit. Il suffit de &ldquo;posséder&rdquo; un nom de domaine pour pouvoir l&rsquo;utiliser.</p></li>
+
+<li><p>Le service est automatisable, notamment grâce à l&rsquo;utilisation du protocole <a href="https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment">ACME</a> : Automated Certificate Management Environment.</p></li>
+</ul>
+
+<p><img src="/img/blog/2016-12-21/acme.jpg" alt="ACME" /></p>
+
+<ul>
+<li>Le service est opéré par un groupement d&rsquo;intérêt public, <a href="https://letsencrypt.org/isrg/">l&rsquo;ISRP</a> : Internet Security Research Group, ayant pour but une gouverance ouverte et transparente.</li>
+</ul>
+
+<p>Il devient donc possible d&rsquo;obtenir automatiquement et gratuitement des certificats émis par une autorité de certification en laquelle on peut <em>a priori</em> avoir confiance, ce qui représente une belle avancée pour la sécurité sur Internet.</p>
+
+<h2 id="mise-en-œuvre">Mise en œuvre</h2>
+
+<p>Passons maintenant au déploiement du certificat sur le CFP du Breizhcamp. Ce déploiement va se dérouler en deux étapes : la génération du certificat (et des éléments nécessaires à son utilisation), et la mise en place de ce certificat dans l&rsquo;application.
+Je ne vais pour le moment vous parler que de la première partie, la génération du certificat.</p>
+
+<p>Let&rsquo;s Encrypt fournit un <a href="https://github.com/letsencrypt/letsencrypt">client en python</a> permettant l&rsquo;interaction avec son autorité de certification. Bien que ce client ne soit pas parfait (n&rsquo;oublions pas qu&rsquo;il s&rsquo;agit encore d&rsquo;une Beta), nous allons quand même nous baser sur lui pour l&rsquo;obtention du certificat.
+Ce client nécessite notamment que le port 80 soit &ldquo;disponible&rdquo; pour les échanges dans le cadre du protocole ACME, et il a besoin d&rsquo;être exécuté sur la machine portant le nom de domaine pour lequel on souhaite un certificat.
+J&rsquo;ai donc choisi d&rsquo;exécuter le client dans un conteneur Docker sur le serveur de production du CFP (qui n&rsquo;était pas encore ouvert à l&rsquo;époque, je me suis donc autorisé l&rsquo;interruption de service générée par le fait d&rsquo;arrêter le CFP le temps de générer le certificat).</p>
+
+<p>Après avoir arrêté le conteneur du CFP, j&rsquo;ai donc lancé un nouveau conteneur Ubuntu en prenant le soin d&rsquo;exposer le port 80 :</p>
+
+<pre><code>docker run -ti -p 80:80 ubuntu /bin/bash
+</code></pre>
+
+<p>Puis j&rsquo;ai installé et exécuté le client Let&rsquo;s encrypt dans mon conteneur. Le client est exécuté en mode &ldquo;standalone&rdquo; et &ldquo;certonly&rdquo; (il lance un serveur HTTP sur le port 80, et génère les certificats sans chercher à les déployer) :</p>
+
+<pre><code>apt-get update
+</code></pre>
+
+<pre><code>apt-get install -y git
+</code></pre>
+
+<pre><code>git clone https://github.com/letsencrypt/letsencrypt
+</code></pre>
+
+<pre><code>cd letsencrypt
+</code></pre>
+
+<pre><code>./letsencrypt-auto --help all
+</code></pre>
+
+<pre><code>./letsencrypt-auto certonly --standalone --email contact@breizhcamp.org -d cfp.breizhcamp.org
+</code></pre>
+
+<p>Et voilà, le dossier <code>/etc/letsencrypt/</code> contient maintenant votre certificat, la clé privée associée, et la chaîne de certification complète. Il ne reste plus qu&rsquo;à l&rsquo;utiliser dans votre serveur Web préféré (ou, comme nous l&rsquo;expliquerons dans un autre article, dans votre application Spring Boot).</p>
+
+                        </div>
+                        
+                        
+
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Rechercher</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Rechercher">
+                <input type="hidden" name="sitesearch" value="http://www.breizhcamp.org/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+
+        <footer id="footer">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-4">
+                <p><b>BreizhCamp 2019</b></p>
+                <p>20, 21 et 22 Mars à Rennes</p>
+            </div>
+            <div class="col-md-4">
+                <p>
+                    
+                        <a href="https://twitter.com/breizhcamp" title="Twitter" target="_NEW">
+                            <img src="http://www.breizhcamp.org/img/social/twitter.png">
+                        </a>
+                    
+                        <a href="https://plus.google.com/103143580610870538195" title="Google Plus" target="_NEW">
+                            <img src="http://www.breizhcamp.org/img/social/googleplus.png">
+                        </a>
+                    
+                        <a href="https://www.youtube.com/user/BreizhCamp" title="YouTube" target="_NEW">
+                            <img src="http://www.breizhcamp.org/img/social/youtube.png">
+                        </a>
+                    
+                        <a href="https://www.flickr.com/photos/149773585@N06/albums" title="flickr" target="_NEW">
+                            <img src="http://www.breizhcamp.org/img/social/flickr.png">
+                        </a>
+                    
+                </p>
+            </div>
+            <div class="col-md-4">
+                <p><b>Editions précédentes</b></p>
+                <p>
+                    
+                        <a href="http://2018.breizhcamp.org">2018</a>
+                    
+                        , <a href="http://2017.breizhcamp.org">2017</a>
+                    
+                        , <a href="http://2016.breizhcamp.org">2016</a>
+                    
+                        , <a href="http://2015.breizhcamp.org">2015</a>
+                    
+                        , <a href="http://2014.breizhcamp.org">2014</a>
+                    
+                        , <a href="http://2013.breizhcamp.org">2013</a>
+                    
+                        , <a href="http://2012.breizhcamp.org">2012</a>
+                    
+                        , <a href="http://2011.breizhcamp.org">2011</a>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-4">
+                <p>Copyright (c) 2015-2018, BreizhCamp team</p>
+        <p><a href="https://github.com/breizhcamp/website">Améliorer ce site</a></p>
+        
+            </div>
+            <div class="col-md-4">
+                <p>contact@breizhcamp.org</p>
+            </div>
+            <div class="col-md-4">
+                <p class="pull-right">
+                    Template par <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+                    
+
+                    Porté sur Hugo par <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    </div>
+    
+
+    
+
+
+<script src="http://www.breizhcamp.org/js/dependencies/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script src="http://www.breizhcamp.org/js/front.js"></script>
+
+
+<script src="http://www.breizhcamp.org/js/owl.carousel.min.js"></script>
+
+<script src="http://www.breizhcamp.org/js/main.js"></script>
+
+
+  </body>
+</html>
